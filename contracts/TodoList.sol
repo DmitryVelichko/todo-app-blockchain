@@ -11,6 +11,10 @@ contract TodoList {
 
     mapping(uint256 => Task) public tasks;
 
+    constructor() public {
+        createTask("This is a string");
+    }
+
     function createTask(string memory _content) public {
         taskCount++;
         tasks[taskCount] = Task(taskCount, _content, false);
