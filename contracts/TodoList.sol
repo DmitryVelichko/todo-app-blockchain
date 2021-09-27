@@ -6,4 +6,5 @@ contract TodoList {
 
 struct Task {
     uint id;
+    string content;
 }
