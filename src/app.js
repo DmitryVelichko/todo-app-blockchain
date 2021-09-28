@@ -3,3 +3,9 @@ App = {
         // Load app...
     }
 }
+
+$(() => {
+    $(window).load(() => {
+        App.load()
+    })
+})
