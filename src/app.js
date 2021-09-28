@@ -22,6 +22,12 @@ App = {
         // User denied account access...
       }
     }
+    // Legacy dapp browsers...
+    else if (window.web3) {
+        App.web3Provider = web3.currentProvider
+        window.web3 = new Web3(web3.currentProvider)
+        
+      }
 }
 
 $(() => {
