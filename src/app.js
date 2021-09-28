@@ -29,6 +29,10 @@ App = {
         // Acccounts always exposed
         web3.eth.sendTransaction({/* ... */})
       }
+       // Non-dapp browsers...
+    else {
+        console.log('Non-Ethereum browser detected. You should consider trying MetaMask!')
+      }
 }
 
 $(() => {
