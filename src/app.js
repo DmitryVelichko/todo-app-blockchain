@@ -49,7 +49,8 @@ App = {
   },
 
   loadContract: async () => {
-    
+    const todoList = await $.getJSON("TodoList.json");
+  },
 };
 
 $(() => {
