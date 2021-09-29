@@ -2,6 +2,7 @@ App = {
   load: async () => {
     await App.loadWeb3();
     await App.loadAccount();
+    await App.loadContract();
   },
 
   // https://medium.com/metamask/https-medium-com-metamask-breaking-change-injecting-web3-7722797916a8
