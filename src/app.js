@@ -53,6 +53,7 @@ App = {
     // Create a JS version of the smart contract
     const todoList = await $.getJSON("TodoList.json");
     App.contracts.TodoList = TruffleContract(todoList);
+    App.contracts.TodoList.setProvider(App.web3Provider);
     console.log(todoList);
   },
 };
