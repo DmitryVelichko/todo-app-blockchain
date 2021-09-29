@@ -52,6 +52,7 @@ App = {
   loadContract: async () => {
     // Create a JS version of the smart contract
     const todoList = await $.getJSON("TodoList.json");
+    App.contracts.TodoList = TruffleContract(todoList);
     console.log(todoList);
   },
 };
