@@ -41,6 +41,11 @@ App = {
       );
     }
   },
+
+  loadAccount: async () => {
+    App.account = web3.eth.accounts[0];
+  }
+
 };
 
 $(() => {
