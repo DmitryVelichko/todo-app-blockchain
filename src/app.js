@@ -76,7 +76,11 @@ render: async() => {
 
     // Update loading state
     App.setLoading(false);
+},
 
+setLoading: (boolean) => {
+  App.loading = boolean;
+  const loader = $('#loader')
 }
 }
 
