@@ -62,6 +62,11 @@ App = {
 },
 
 render: async() => {
+  // Prevent double render
+  if (App.loading) {
+    return
+  }
+
   // Render Account
   $('#account').html(App.account);
 }
