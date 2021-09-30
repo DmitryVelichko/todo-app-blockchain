@@ -82,6 +82,10 @@ setLoading: (boolean) => {
   App.loading = boolean;
   const loader = $('#loader')
   const content = $('#content');
+  if (boolean) {
+    loader.show()
+    content.hide()
+  }
 }
 }
 
