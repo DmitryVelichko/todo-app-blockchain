@@ -62,6 +62,7 @@ App = {
 },
 
 render: async() => {
+  // Render Account
   $('#account').html(App.account);
 }
 }
