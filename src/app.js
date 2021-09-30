@@ -1,4 +1,5 @@
 App = {
+  loading: false;
   contracts: {},
 
   load: async () => {
