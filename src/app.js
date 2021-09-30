@@ -67,6 +67,9 @@ render: async() => {
     return
   }
 
+  // Update app loading state
+  App.setLoading(true);
+
   // Render Account
   $('#account').html(App.account);
 }
