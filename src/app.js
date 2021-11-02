@@ -1,5 +1,5 @@
 App = {
-  loading: false;
+  loading: false,
   contracts: {},
 
   load: async () => {
