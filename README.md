@@ -1,2 +1,2 @@
 ﻿# todo-app-blockchain
-ToDo: finish the app.
+ToDo: довести до конца
